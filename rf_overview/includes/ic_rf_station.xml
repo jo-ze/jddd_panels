@@ -1,34 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jdddPanel><DOOCSLayeredPane name="EditorPanel" bounds="623,5,160,862"><author>shiftdocu</author><description>Shift docu RF: one module column; plots taken from FLASH_FlaTops_ovrvw4Ops_incl and FLASH_VS_HIST_overview_incl_sc</description><fillColor>210,210,210</fillColor><grid>5.0,5.0</grid>
-<DOOCSLabel name="hdr" bounds="0,0,160,22"><text>$l</text><textColor>0,0,0</textColor><textFont>Arial,1,16</textFont><alignX>CENTER</alignX><alignY>CENTER</alignY></DOOCSLabel>
-<DOOCSValue name="sp_a" bounds="0,30,160,22"><adr>//CTRL.$l/SP.AMPL</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="sp_p" bounds="0,57,160,22"><adr>//CTRL.$l/SP.PHASE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="rbv_a" bounds="0,84,160,22"><adr>//VS.$l/AMPL.SAMPLE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="rbv_p" bounds="0,111,160,22"><adr>//VS.$l/PHASE.SAMPLE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="da" bounds="0,138,160,22"><adr>/LLRF.DIAGNOSTICS/VS.$l/AMPL.ERROR</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="dp" bounds="0,165,160,22"><adr>/LLRF.DIAGNOSTICS/VS.$l/PHASE.ERROR</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="ft" bounds="0,192,160,22"><adr>//MAIN.$l/PULSE_FLATTOP</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="eg1" bounds="0,219,76,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/${$l.replace(ACC,M1.ACC)}/ENERGYGAIN.BR1</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
-<DOOCSLabel name="egs" bounds="76,219,8,22"><text>/</text><textColor>120,120,120</textColor><textFont>Arial,0,16</textFont><alignX>CENTER</alignX><alignY>CENTER</alignY></DOOCSLabel>
-<DOOCSValue name="eg2" bounds="84,219,76,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/${$l.replace(ACC,M1.ACC)}/ENERGYGAIN.BR2</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog></DOOCSValue>
-<DOOCSSwitch name="flattop_select" bounds="0,286,160,276"><adr>/LLRF.CONTROLLER/MAIN.$l/NAME</adr>
-<DOOCSSwitchCase name="X = MAIN.GUN" bounds="0,0,160,276"><highCase>MAIN.GUN</highCase>
-<DOOCSPlotSpectrum name="PlotAmplitude" bounds="0,0,160,132">
-<titleText>Amplitude</titleText><scaleColor>50,0,102</scaleColor><showLegend>false</showLegend><masterXScale>FL_FlatTops_ovrvw4GUN_masterX</masterXScale><xResolution>0</xResolution><bgRangeAdr1>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.1</bgRangeAdr1><bgRangeAdr2>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.2</bgRangeAdr2><bgRangeAdr3>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.3</bgRangeAdr3><adr0>//VS.$l/AMPL.TD</adr0><lineColor0>51,51,51</lineColor0><adr1>//CTRL.$l/SP_AMPL.TD</adr1><lineColor1>0,150,0</lineColor1><adr2>transfer component</adr2><lineColor2>0,0,250</lineColor2><adr3>transfer component</adr3><lineColor3>250,200,0</lineColor3><lineColor4>0,250,250</lineColor4><xMin>700.0</xMin><xMax>1200.0</xMax><xDefaultMin>700.0</xDefaultMin><xDefaultMax>1300.0</xDefaultMax><xLimitMin>600.0</xLimitMin><xLimitMax>1500.0</xLimitMax><xScaleFromServer>false</xScaleFromServer><xTextColor>51,51,51</xTextColor><xAutoScale>false</xAutoScale><yMax>400.0</yMax><yDefaultMax>400.0</yDefaultMax><yLimitMin>0.0</yLimitMin><yLimitMax>500.0</yLimitMax><yScaleFromServer>false</yScaleFromServer><yTextColor>51,51,51</yTextColor></DOOCSPlotSpectrum>
-<DOOCSPlotSpectrum name="PlotPhase" bounds="0,144,160,132">
-<titleText>Phase</titleText><scaleColor>50,0,102</scaleColor><showLegend>false</showLegend><masterXScale>FL_FlatTops_ovrvw4GUN_masterX</masterXScale><xResolution>0</xResolution><bgRangeAdr1>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.1</bgRangeAdr1><bgRangeAdr2>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.2</bgRangeAdr2><bgRangeAdr3>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.3</bgRangeAdr3><adr0>//VS.$l/PHASE.TD</adr0><lineColor0>51,51,51</lineColor0><adr1>//CTRL.$l/SP_PHASE.TD</adr1><lineColor1>0,150,0</lineColor1><lineColor2>0,0,250</lineColor2><xMin>700.0</xMin><xMax>1200.0</xMax><xDefaultMin>700.0</xDefaultMin><xDefaultMax>1300.0</xDefaultMax><xLimitMin>600.0</xLimitMin><xLimitMax>1500.0</xLimitMax><xScaleFromServer>false</xScaleFromServer><xTextColor>51,51,51</xTextColor><xAutoScale>false</xAutoScale><yMin>-200.0</yMin><yMax>200.0</yMax><yDefaultMin>-180.0</yDefaultMin><yDefaultMax>180.0</yDefaultMax><yLimitMin>-180.0</yLimitMin><yLimitMax>180.0</yLimitMax><yScaleFromServer>false</yScaleFromServer><yTextColor>51,51,51</yTextColor></DOOCSPlotSpectrum>
+<jdddPanel><DOOCSLayeredPane name="EditorPanel" bounds="378,5,200,920"><author>shiftdocu</author><description>RF: one module column; plots taken from FLASH_FlaTops_ovrvw4Ops_incl and FLASH_VS_HIST_overview_incl_sc</description><fillColor>210,210,210</fillColor><grid>5.0,5.0</grid>
+<DOOCSSwitch name="for energt measurement" bounds="0,330,200,35">
+<DOOCSSwitchCase name="null" bounds="0,0,200,35">
 </DOOCSSwitchCase>
-<DOOCSSwitchCase name="otherwise" bounds="0,0,160,276">
-<DOOCSPlotSpectrum name="PlotAmplitude" bounds="0,0,160,132">
-<titleText>Amplitude</titleText><scaleColor>50,0,102</scaleColor><showLegend>false</showLegend><masterXScale>FL_FlatTops_ovrvw4Ops_masterX</masterXScale><xResolution>0</xResolution><bgRangeAdr1>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.1</bgRangeAdr1><bgRangeAdr2>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.2</bgRangeAdr2><bgRangeAdr3>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.3</bgRangeAdr3><adr0>//VS.$l/AMPL.TD</adr0><lineColor0>51,51,51</lineColor0><adr1>//CTRL.$l/SP_AMPL.TD</adr1><lineColor1>0,150,0</lineColor1><adr2>transfer component</adr2><lineColor2>0,0,250</lineColor2><adr3>transfer component</adr3><lineColor3>250,200,0</lineColor3><lineColor4>0,250,250</lineColor4><xMin>700.0</xMin><xMax>1300.0</xMax><xDefaultMin>700.0</xDefaultMin><xDefaultMax>1300.0</xDefaultMax><xLimitMin>600.0</xLimitMin><xLimitMax>1500.0</xLimitMax><xScaleFromServer>false</xScaleFromServer><xTextColor>51,51,51</xTextColor><xAutoScale>false</xAutoScale><yMax>400.0</yMax><yDefaultMax>400.0</yDefaultMax><yLimitMin>0.0</yLimitMin><yLimitMax>500.0</yLimitMax><yScaleFromServer>false</yScaleFromServer><yTextColor>51,51,51</yTextColor></DOOCSPlotSpectrum>
-<DOOCSPlotSpectrum name="PlotPhase" bounds="0,144,160,132">
-<titleText>Phase</titleText><scaleColor>50,0,102</scaleColor><showLegend>false</showLegend><masterXScale>FL_FlatTops_ovrvw4Ops_masterX</masterXScale><xResolution>0</xResolution><bgRangeAdr1>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.1</bgRangeAdr1><bgRangeAdr2>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.2</bgRangeAdr2><bgRangeAdr3>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.3</bgRangeAdr3><adr0>//VS.$l/PHASE.TD</adr0><lineColor0>51,51,51</lineColor0><adr1>//CTRL.$l/SP_PHASE.TD</adr1><lineColor1>0,150,0</lineColor1><lineColor2>0,0,250</lineColor2><xMin>700.0</xMin><xMax>1300.0</xMax><xDefaultMin>700.0</xDefaultMin><xDefaultMax>1300.0</xDefaultMax><xLimitMin>600.0</xLimitMin><xLimitMax>1500.0</xLimitMax><xScaleFromServer>false</xScaleFromServer><xTextColor>51,51,51</xTextColor><xAutoScale>false</xAutoScale><yMin>-200.0</yMin><yMax>200.0</yMax><yDefaultMin>-180.0</yDefaultMin><yDefaultMax>180.0</yDefaultMax><yLimitMin>-180.0</yLimitMin><yLimitMax>180.0</yLimitMax><yScaleFromServer>false</yScaleFromServer><yTextColor>51,51,51</yTextColor></DOOCSPlotSpectrum>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,200,35">
 </DOOCSSwitchCase>
 </DOOCSSwitch>
-<DOOCSPlotHist name="PlotHist1" bounds="0,574,160,132">
-<masterXScale>PlotHist1</masterXScale><adr0>//VS.$l/AMPL.SAMPLE.HIST</adr0><lineStyle0>StepLine</lineStyle0><lineColor1>255,0,255</lineColor1><xDefaultMin>1.459928523E9</xDefaultMin><xDefaultMax>1.460050923E9</xDefaultMax><xLimitMax>1.491550923E9</xLimitMax><yScaleFromServer>false</yScaleFromServer></DOOCSPlotHist>
-<DOOCSPlotHist name="PlotHist2" bounds="0,718,160,132">
-<masterXScale>PlotHist1</masterXScale><adr0>//VS.$l/PHASE.SAMPLE.HIST</adr0><lineStyle0>StepLine</lineStyle0><lineColor1>255,0,255</lineColor1><xDefaultMin>1.459928523E9</xDefaultMin><xDefaultMax>1.460050923E9</xDefaultMax><xLimitMax>1.491550923E9</xLimitMax><yScaleFromServer>false</yScaleFromServer></DOOCSPlotHist>
+<DOOCSSwitch name="Switch1" bounds="0,130,200,95"><adr>/LLRF.CONTROLLER/MAIN.$l/NAME</adr>
+<DOOCSSwitchCase name="X matches MAIN.ACC1" bounds="0,0,200,95"><highCase>MAIN.ACC1</highCase><highComparator>matches</highComparator>
+<DOOCSValue name="Value4" bounds="85,25,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value3" bounds="85,0,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSIf name="If1" bounds="0,0,60,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,60,95"><comparator>available</comparator>
+<DOOCSValue name="Value4" bounds="0,75,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value3" bounds="0,50,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,60,95">
+</DOOCSIfCase>
+</DOOCSIf>
+<DOOCSValue name="Value2" bounds="0,25,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value1" bounds="0,0,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="X matches MAIN.ACC23" bounds="0,0,200,95"><highCase>MAIN.ACC23</highCase><highComparator>matches</highComparator>
+<DOOCSValue name="Value4" bounds="85,25,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value3" bounds="85,0,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSIf name="If1" bounds="0,0,60,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,60,95"><comparator>available</comparator>
+<DOOCSValue name="Value4" bounds="0,75,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value3" bounds="0,50,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,60,95">
+</DOOCSIfCase>
+</DOOCSIf>
+<DOOCSValue name="Value2" bounds="0,25,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value1" bounds="0,0,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="X matches MAIN.ACC45" bounds="0,0,200,95"><highCase>MAIN.ACC45</highCase><highComparator>matches</highComparator>
+<DOOCSValue name="Value4" bounds="85,25,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value3" bounds="85,0,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSIf name="If1" bounds="0,0,60,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,60,95"><comparator>available</comparator>
+<DOOCSValue name="Value4" bounds="0,75,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value3" bounds="0,50,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,60,95">
+</DOOCSIfCase>
+</DOOCSIf>
+<DOOCSValue name="Value2" bounds="0,25,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value1" bounds="0,0,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="X matches MAIN.ACC67" bounds="0,0,200,95"><highCase>MAIN.ACC67</highCase><highComparator>matches</highComparator>
+<DOOCSValue name="Value4" bounds="85,25,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value3" bounds="85,0,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSIf name="If1" bounds="0,0,60,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,60,95"><comparator>available</comparator>
+<DOOCSValue name="Value4" bounds="0,75,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value3" bounds="0,50,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,60,95">
+</DOOCSIfCase>
+</DOOCSIf>
+<DOOCSValue name="Value2" bounds="0,25,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value1" bounds="0,0,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,200,95">
+<DOOCSIf name="If2" bounds="0,0,100,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.AMPL</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,100,95"><comparator>available</comparator>
+<DOOCSValue name="Value2" bounds="5,55,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.PHASE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value1" bounds="5,30,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.AMPL</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,100,95">
+</DOOCSIfCase>
+</DOOCSIf>
+<DOOCSIf name="If1" bounds="85,0,100,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.AMPL</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,100,95"><comparator>available</comparator>
+<DOOCSValue name="Value3" bounds="0,0,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.AMPL</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+<DOOCSValue name="Value4" bounds="0,25,50,20"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.PHASE</adr><representation>Float</representation><textColor>51,51,51</textColor></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,100,95">
+</DOOCSIfCase>
+</DOOCSIf>
+</DOOCSSwitchCase>
+</DOOCSSwitch>
+<DOOCSLabel name="Label4" bounds="85,110,50,20"><text>BR2</text></DOOCSLabel>
+<DOOCSLabel name="Label3" bounds="5,110,50,20"><text>BR1</text></DOOCSLabel>
+<DOOCSLine name="Line2" bounds="5,215,155,1"><points>0,0,155,0</points></DOOCSLine>
+<DOOCSLine name="Line1" bounds="5,105,150,1"><points>0,0,150,0</points></DOOCSLine>
+<DOOCSValue name="eg2" bounds="84,305,76,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/${$l.replace(ACC,M1.ACC)}/ENERGYGAIN.BR2</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog></DOOCSValue>
+<DOOCSValue name="eg1" bounds="0,305,76,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/${$l.replace(ACC,M1.ACC)}/ENERGYGAIN.BR1</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="Label2" bounds="80,20,50,20"><text>RBV</text></DOOCSLabel>
+<DOOCSLabel name="Label1" bounds="10,20,50,20"><text>SP</text></DOOCSLabel>
+<DOOCSSwitch name="Switch4" bounds="0,250,160,30"><adr>/LLRF.CONTROLLER/MAIN.$l/NAME</adr>
+<DOOCSSwitchCase name="X = MAIN.GUN" bounds="0,0,160,30"><highCase>MAIN.GUN</highCase>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,160,30">
+<DOOCSLabel name="Label7" bounds="54,3,56,15"><text>Ctrl Err</text><textFont>Arial,1,10</textFont></DOOCSLabel>
+<DOOCSLabel name="Label8" bounds="133,4,26,15"><text>P2P</text><textFont>Arial,1,10</textFont></DOOCSLabel>
+<DOOCSGroup name="Group3" bounds="140,15,29,15">
+<DOOCSLabel name="Label5" bounds="6,1,48,14"><text>dP</text><textFont>Arial,1,10</textFont></DOOCSLabel>
+<DOOCSColouredIndicator name="ColouredIndicator1" bounds="2,2,27,12"><adr>/LLRF.DIAGNOSTICS/VS.$l/PHASE.P2P.STD</adr><lineTransparent>true</lineTransparent><alpha>0.5</alpha><maximum>0.2</maximum></DOOCSColouredIndicator>
+</DOOCSGroup>
+<DOOCSGroup name="Group4" bounds="112,15,29,15">
+<DOOCSLabel name="Label4" bounds="3,1,26,14"><text>dA/A</text><textFont>Arial,1,10</textFont></DOOCSLabel>
+<DOOCSColouredIndicator name="ColouredIndicator3" bounds="2,2,27,12"><adr>/LLRF.DIAGNOSTICS/VS.$l/AMPL.P2P.STD</adr><lineTransparent>true</lineTransparent><alpha>0.5</alpha><maximum>0.2</maximum></DOOCSColouredIndicator>
+</DOOCSGroup>
+<DOOCSGroup name="Group2" bounds="80,15,29,15">
+<DOOCSLabel name="Label5" bounds="6,1,23,14"><text>dP</text><textFont>Arial,1,10</textFont></DOOCSLabel>
+<DOOCSColouredIndicator name="ColouredIndicator1" bounds="2,2,27,12"><adr>/LLRF.DIAGNOSTICS/VS.$l/PHASE.ERROR</adr><lineTransparent>true</lineTransparent><alpha>0.5</alpha><maximum>0.2</maximum></DOOCSColouredIndicator>
+</DOOCSGroup>
+<DOOCSGroup name="Group1" bounds="51,15,29,15">
+<DOOCSLabel name="Label4" bounds="3,1,25,14"><text>dA/A</text><textFont>Arial,1,10</textFont></DOOCSLabel>
+<DOOCSColouredIndicator name="ColouredIndicator3" bounds="2,2,27,12"><adr>/LLRF.DIAGNOSTICS/VS.$l/AMPL.ERROR</adr><lineTransparent>true</lineTransparent><alpha>0.5</alpha><maximum>0.2</maximum></DOOCSColouredIndicator>
+</DOOCSGroup>
+</DOOCSSwitchCase>
+</DOOCSSwitch>
+<DOOCSLabel name="hdr" bounds="0,0,160,22"><text>$l</text><textColor>0,0,0</textColor><textFont>Arial,1,16</textFont><alignX>CENTER</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSValue name="sp_a" bounds="0,40,160,22"><adr>//CTRL.$l/SP.AMPL</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="sp_p" bounds="0,75,160,22"><adr>//CTRL.$l/SP.PHASE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="rbv_a" bounds="80,40,80,22"><adr>//VS.$l/AMPL.SAMPLE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="rbv_p" bounds="75,70,80,22"><adr>//VS.$l/PHASE.SAMPLE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="ft" bounds="0,280,160,22"><adr>//MAIN.$l/PULSE_FLATTOP</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="egs" bounds="75,225,8,22"><text>|</text><textColor>120,120,120</textColor><textFont>Arial,0,16</textFont><alignX>CENTER</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSSwitch name="flattop_select" bounds="0,355,200,276"><adr>/LLRF.CONTROLLER/MAIN.$l/NAME</adr>
+<DOOCSSwitchCase name="X = MAIN.GUN" bounds="0,0,200,276"><highCase>MAIN.GUN</highCase>
+<DOOCSPlotSpectrum name="PlotAmplitude" bounds="0,0,200,132">
+<titleText>Amplitude</titleText><scaleColor>50,0,102</scaleColor><showTitle>false</showTitle><showLegend>false</showLegend><masterXScale>FL_FlatTops_ovrvw4GUN_masterX</masterXScale><xResolution>0</xResolution><bgRangeAdr1>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.1</bgRangeAdr1><bgRangeAdr2>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.2</bgRangeAdr2><bgRangeAdr3>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.3</bgRangeAdr3><adr0>//VS.$l/AMPL.TD</adr0><lineColor0>51,51,51</lineColor0><adr1>//CTRL.$l/SP_AMPL.TD</adr1><lineColor1>0,150,0</lineColor1><adr2>transfer component</adr2><lineColor2>0,0,250</lineColor2><adr3>transfer component</adr3><lineColor3>250,200,0</lineColor3><lineColor4>0,250,250</lineColor4><xMin>600.0</xMin><xMax>1200.0</xMax><xDefaultMin>700.0</xDefaultMin><xDefaultMax>1300.0</xDefaultMax><xLimitMin>600.0</xLimitMin><xLimitMax>1500.0</xLimitMax><xScaleFromServer>false</xScaleFromServer><xTextFont>Arial,1,8</xTextFont><xTextColor>51,51,51</xTextColor><xAutoScale>false</xAutoScale><yMax>400.0</yMax><yDefaultMax>400.0</yDefaultMax><yLimitMin>0.0</yLimitMin><yLimitMax>500.0</yLimitMax><yScaleFromServer>false</yScaleFromServer><yTextFont>Arial,1,8</yTextFont><yTextColor>51,51,51</yTextColor></DOOCSPlotSpectrum>
+<DOOCSPlotSpectrum name="PlotPhase" bounds="0,144,200,132">
+<titleText>Phase</titleText><scaleColor>50,0,102</scaleColor><showTitle>false</showTitle><showLegend>false</showLegend><masterXScale>FL_FlatTops_ovrvw4GUN_masterX</masterXScale><xResolution>0</xResolution><bgRangeAdr1>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.1</bgRangeAdr1><bgRangeAdr2>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.2</bgRangeAdr2><bgRangeAdr3>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.3</bgRangeAdr3><adr0>//VS.$l/PHASE.TD</adr0><lineColor0>51,51,51</lineColor0><adr1>//CTRL.$l/SP_PHASE.TD</adr1><lineColor1>0,150,0</lineColor1><lineColor2>0,0,250</lineColor2><xMin>600.0</xMin><xMax>1600.0</xMax><xDefaultMin>700.0</xDefaultMin><xDefaultMax>1300.0</xDefaultMax><xLimitMin>600.0</xLimitMin><xLimitMax>1500.0</xLimitMax><xScaleFromServer>false</xScaleFromServer><xTextFont>Arial,1,8</xTextFont><xTextColor>51,51,51</xTextColor><xAutoScale>false</xAutoScale><yMin>-200.0</yMin><yMax>200.0</yMax><yDefaultMin>-180.0</yDefaultMin><yDefaultMax>180.0</yDefaultMax><yLimitMin>-180.0</yLimitMin><yLimitMax>180.0</yLimitMax><yScaleFromServer>false</yScaleFromServer><yTextFont>Arial,1,8</yTextFont><yTextColor>51,51,51</yTextColor></DOOCSPlotSpectrum>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,200,276">
+<DOOCSPlotSpectrum name="PlotAmplitude" bounds="0,0,200,132">
+<titleText>Amplitude</titleText><scaleColor>50,0,102</scaleColor><showTitle>false</showTitle><showLegend>false</showLegend><masterXScale>FL_FlatTops_ovrvw4Ops_masterX</masterXScale><xResolution>0</xResolution><bgRangeAdr1>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.1</bgRangeAdr1><bgRangeAdr2>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.2</bgRangeAdr2><bgRangeAdr3>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.3</bgRangeAdr3><adr0>//VS.$l/AMPL.TD</adr0><lineColor0>51,51,51</lineColor0><adr1>//CTRL.$l/SP_AMPL.TD</adr1><lineColor1>0,150,0</lineColor1><adr2>transfer component</adr2><lineColor2>0,0,250</lineColor2><adr3>transfer component</adr3><lineColor3>250,200,0</lineColor3><lineColor4>0,250,250</lineColor4><xMin>600.0</xMin><xMax>1600.0</xMax><xDefaultMin>700.0</xDefaultMin><xDefaultMax>1300.0</xDefaultMax><xLimitMin>600.0</xLimitMin><xLimitMax>1500.0</xLimitMax><xScaleFromServer>false</xScaleFromServer><xTextFont>Arial,1,8</xTextFont><xTextColor>51,51,51</xTextColor><xAutoScale>false</xAutoScale><yMax>400.0</yMax><yDefaultMax>400.0</yDefaultMax><yLimitMin>0.0</yLimitMin><yLimitMax>500.0</yLimitMax><yScaleFromServer>false</yScaleFromServer><yTextFont>Arial,1,8</yTextFont><yTextColor>51,51,51</yTextColor></DOOCSPlotSpectrum>
+<DOOCSPlotSpectrum name="PlotPhase" bounds="0,144,200,132">
+<titleText>Phase</titleText><scaleColor>50,0,102</scaleColor><showTitle>false</showTitle><showLegend>false</showLegend><masterXScale>FL_FlatTops_ovrvw4Ops_masterX</masterXScale><xResolution>0</xResolution><bgRangeAdr1>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.1</bgRangeAdr1><bgRangeAdr2>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.2</bgRangeAdr2><bgRangeAdr3>FLASH.DIAG/TIMER/FLASHCPUTIME1.0/BUNCH_POSITION.3</bgRangeAdr3><adr0>//VS.$l/PHASE.TD</adr0><lineColor0>51,51,51</lineColor0><adr1>//CTRL.$l/SP_PHASE.TD</adr1><lineColor1>0,150,0</lineColor1><lineColor2>0,0,250</lineColor2><xMin>600.0</xMin><xMax>1600.0</xMax><xDefaultMin>700.0</xDefaultMin><xDefaultMax>1300.0</xDefaultMax><xLimitMin>600.0</xLimitMin><xLimitMax>1500.0</xLimitMax><xScaleFromServer>false</xScaleFromServer><xTextFont>Arial,1,8</xTextFont><xTextColor>51,51,51</xTextColor><xAutoScale>false</xAutoScale><yMin>-200.0</yMin><yMax>200.0</yMax><yDefaultMin>-180.0</yDefaultMin><yDefaultMax>180.0</yDefaultMax><yLimitMin>-180.0</yLimitMin><yLimitMax>180.0</yLimitMax><yScaleFromServer>false</yScaleFromServer><yTextFont>Arial,1,8</yTextFont><yTextColor>51,51,51</yTextColor></DOOCSPlotSpectrum>
+</DOOCSSwitchCase>
+</DOOCSSwitch>
+<DOOCSPlotHist name="PlotHist1" bounds="0,640,200,132">
+<showTitle>false</showTitle><showLegend>false</showLegend><masterXScale>PlotHist1</masterXScale><adr0>//VS.$l/AMPL.SAMPLE.HIST</adr0><lineStyle0>StepLine</lineStyle0><lineColor1>255,0,255</lineColor1><xDefaultMin>1.459928523E9</xDefaultMin><xDefaultMax>1.460050923E9</xDefaultMax><xLimitMax>1.491550923E9</xLimitMax><xTextFont>Arial,1,8</xTextFont><yScaleFromServer>false</yScaleFromServer><yTextFont>Arial,1,8</yTextFont></DOOCSPlotHist>
+<DOOCSPlotHist name="PlotHist2" bounds="0,775,200,132">
+<showTitle>false</showTitle><showLegend>false</showLegend><masterXScale>PlotHist1</masterXScale><adr0>//VS.$l/PHASE.SAMPLE.HIST</adr0><lineStyle0>StepLine</lineStyle0><lineColor1>255,0,255</lineColor1><xDefaultMin>1.459928523E9</xDefaultMin><xDefaultMax>1.460050923E9</xDefaultMax><xLimitMax>1.491550923E9</xLimitMax><xTextFont>Arial,1,8</xTextFont><yScaleFromServer>false</yScaleFromServer><yTextFont>Arial,1,8</yTextFont></DOOCSPlotHist>
 </DOOCSLayeredPane>
-<thumbnail>iVBORw0KGgoAAAANSUhEUgAAABEAAABXCAYAAADibK6LAAABTElEQVR4Xu2TMW6EMBBF9xDUW6de2twgl+BElKHhAtSAhCgQCIoUVNTcZSKvBCLjwWOzA1JWxnoysvHzGOvf2raFPeI4hizLtPEtN/Wol2maSKIogiRJtPEtrMQGOUld19qEC+9YiYjEH0eXvFklIhJ/HF1ySSXjOGpjmkSkEi85STLPMyyUZQl5nkPTNJCmKajr7/t+naf4IwnD0AlSsojwThS7EryDiV0JnjSxK/GV6JKlEltICd7BhFFyBDmJeIoVVVU9U9x1HQzD4Jbio2gSfI0mjBK8E8U/k9j2RgnHNRJbjBKXnpQcQU4ikuL75x1e4RzJD2pBELCQksfXY0V9BPD9pCiKDworCQcrwah5q3+CF3oJ31gJx8sSSrBKRFIsIsHluXKOBF/nNsU4eNYBxAsoWAmGumYvsZRw7RrJEZwkVBWrRCTFEs8vjDdgtErY4h8AAAAASUVORK5CYII=</thumbnail>
+<thumbnail>iVBORw0KGgoAAAANSUhEUgAAABUAAABdCAYAAABKHC2XAAAB3klEQVR4Xu2WTY6CMBSAOYmH0O3cYC7BVbgAW/dGgy4gwRhjXBiXs3DFFnYepDOvmWJ9r+Wn9DljUpovLf35+goUiK7Xq7CRpqnY7XakvosIDihUVWUkjmOxXC5JfRe9UhdaaVEUoixL0gHYbrdis9mI/X5P2kzwRXo+n0mDzu12I3Vd8EXKIn2f5R8OB3E6nZzAwlbKEilI4eGGh/xyuZBOgGo/Ho+kDSOlP4e43+9w0pv/DurLH9I+cEQ2pBEPtoEH2+CNtK5rIsHgwTZCpMPvPt6itq0qpWzbFDdMgU8a0b07Ksc8SXXgrZQkifXvZLVaiSzLZI7HSqNp+ev1WuR5LnNoh28+/BeoMrSpMh5rlU5BSvs+fGP5u0j/zyc6sjx/E/KH1BfS2DSN8EkrXSwWXiBSPONYglTmQfqOUh8QqWnWrrLpvJVGHG8plpe0WoYP2uV3XZ8xvEaqh+8KkeqVrhApvtguOZHqHVx5jVQP3xUi1StdIVIV6VSepPpMXWV8bio/SX0hpSxvqdnHTHx5SOABWqkSzz/nThilajbceShGaYjUvzREOjkRqU1sqzf1MUp9wSvFS3JJRKrE+K4OxShVs+HOQzFKQ6T+pSHSyYlIfSKlLL89LFKO4xtmMOBLnEfhMwAAAABJRU5ErkJggg==</thumbnail>
 </jdddPanel>
