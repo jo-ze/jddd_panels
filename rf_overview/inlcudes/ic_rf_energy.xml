@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jdddPanel><DOOCSLayeredPane name="EditorPanel" bounds="0,0,320,265"><author>shiftdocu</author><description>Shift docu RF: measured vs LLRF-derived beam energy; measured cell stays empty when no beam</description><fillColor>210,210,210</fillColor><grid>5.0,5.0</grid>
+<DOOCSLabel name="t" bounds="0,0,320,22"><text>Energy [MeV]</text><textColor>0,0,0</textColor><textFont>Arial,1,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="c1" bounds="130,28,90,20"><text>measured</text><textColor>120,120,120</textColor><textFont>Arial,0,13</textFont><alignX>RIGHT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="c2" bounds="230,28,90,20"><text>LLRF</text><textColor>120,120,120</textColor><textFont>Arial,0,13</textFont><alignX>RIGHT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLine name="l0" bounds="0,50,320,1"><points>0,0,320,0</points><lineColor>140,140,140</lineColor></DOOCSLine>
+<DOOCSLabel name="n0" bounds="0,58,130,22"><text>GUN</text><textColor>0,0,0</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSValue name="e0" bounds="230,58,90,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/GUN/ENERGYGAIN_TOTAL.BR1</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="n1" bounds="0,85,130,22"><text>BC1</text><textColor>0,0,0</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSValue name="e1" bounds="230,85,90,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/M1.ACC39/ENERGYGAIN_TOTAL.BR1</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="n2" bounds="0,112,130,22"><text>BC2 (FL0CBC2)</text><textColor>0,0,0</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSSwitch name="sw_m2" bounds="130,112,90,22"><adr>FLASH.DIAG/BEAM_ENERGY_MEASUREMENT/FL0CBC2/ENERGY.FLASH1</adr><addErrorCase>true</addErrorCase>
+<DOOCSSwitchCase name="error" bounds="0,0,90,22"><errorCase>true</errorCase><DOOCSLabel name="e_m2" bounds="0,0,90,22"><text></text><textColor>160,160,160</textColor><textFont>Arial,0,16</textFont><alignX>RIGHT</alignX><alignY>CENTER</alignY></DOOCSLabel></DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,90,22"><DOOCSValue name="m2" bounds="0,0,90,22"><adr>FLASH.DIAG/BEAM_ENERGY_MEASUREMENT/FL0CBC2/ENERGY.FLASH1</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue></DOOCSSwitchCase>
+</DOOCSSwitch>
+<DOOCSValue name="e2" bounds="230,112,90,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/M1.ACC23/ENERGYGAIN_TOTAL.BR1</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="n3" bounds="0,139,130,22"><text>FL1PARC</text><textColor>0,0,0</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSSwitch name="sw_m3" bounds="130,139,90,22"><adr>FLASH.DIAG/BEAM_ENERGY_MEASUREMENT/FL1PARC/ENERGY.FLASH1</adr><addErrorCase>true</addErrorCase>
+<DOOCSSwitchCase name="error" bounds="0,0,90,22"><errorCase>true</errorCase><DOOCSLabel name="e_m3" bounds="0,0,90,22"><text></text><textColor>160,160,160</textColor><textFont>Arial,0,16</textFont><alignX>RIGHT</alignX><alignY>CENTER</alignY></DOOCSLabel></DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,90,22"><DOOCSValue name="m3" bounds="0,0,90,22"><adr>FLASH.DIAG/BEAM_ENERGY_MEASUREMENT/FL1PARC/ENERGY.FLASH1</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue></DOOCSSwitchCase>
+</DOOCSSwitch>
+<DOOCSLabel name="n4" bounds="0,166,130,22"><text>FL1DUMP</text><textColor>0,0,0</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSSwitch name="sw_m4" bounds="130,166,90,22"><adr>FLASH.DIAG/BEAM_ENERGY_MEASUREMENT/FL1DUMP/ENERGY.FLASH1</adr><addErrorCase>true</addErrorCase>
+<DOOCSSwitchCase name="error" bounds="0,0,90,22"><errorCase>true</errorCase><DOOCSLabel name="e_m4" bounds="0,0,90,22"><text></text><textColor>160,160,160</textColor><textFont>Arial,0,16</textFont><alignX>RIGHT</alignX><alignY>CENTER</alignY></DOOCSLabel></DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,90,22"><DOOCSValue name="m4" bounds="0,0,90,22"><adr>FLASH.DIAG/BEAM_ENERGY_MEASUREMENT/FL1DUMP/ENERGY.FLASH1</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue></DOOCSSwitchCase>
+</DOOCSSwitch>
+<DOOCSValue name="e4" bounds="230,166,90,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/M1.ACC67/ENERGYGAIN_TOTAL.BR1</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="n5" bounds="0,205,130,22"><text>FL2EXTR</text><textColor>0,0,0</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSSwitch name="sw_m5" bounds="130,205,90,22"><adr>FLASH.DIAG/BEAM_ENERGY_MEASUREMENT/FL2EXTR/ENERGY.FLASH2</adr><addErrorCase>true</addErrorCase>
+<DOOCSSwitchCase name="error" bounds="0,0,90,22"><errorCase>true</errorCase><DOOCSLabel name="e_m5" bounds="0,0,90,22"><text></text><textColor>160,160,160</textColor><textFont>Arial,0,16</textFont><alignX>RIGHT</alignX><alignY>CENTER</alignY></DOOCSLabel></DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,90,22"><DOOCSValue name="m5" bounds="0,0,90,22"><adr>FLASH.DIAG/BEAM_ENERGY_MEASUREMENT/FL2EXTR/ENERGY.FLASH2</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue></DOOCSSwitchCase>
+</DOOCSSwitch>
+<DOOCSValue name="e5" bounds="230,205,90,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/M1.ACC67/ENERGYGAIN_TOTAL.BR2</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="n6" bounds="0,232,130,22"><text>FL2XTDS</text><textColor>0,0,0</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSSwitch name="sw_m6" bounds="130,232,90,22"><adr>FLASH.DIAG/BEAM_ENERGY_MEASUREMENT/FL2XTDS/ENERGY.FLASH2</adr><addErrorCase>true</addErrorCase>
+<DOOCSSwitchCase name="error" bounds="0,0,90,22"><errorCase>true</errorCase><DOOCSLabel name="e_m6" bounds="0,0,90,22"><text></text><textColor>160,160,160</textColor><textFont>Arial,0,16</textFont><alignX>RIGHT</alignX><alignY>CENTER</alignY></DOOCSLabel></DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,90,22"><DOOCSValue name="m6" bounds="0,0,90,22"><adr>FLASH.DIAG/BEAM_ENERGY_MEASUREMENT/FL2XTDS/ENERGY.FLASH2</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue></DOOCSSwitchCase>
+</DOOCSSwitch>
+<DOOCSLine name="l1" bounds="0,196,320,1"><points>0,0,320,0</points><lineColor>140,140,140</lineColor></DOOCSLine>
+</DOOCSLayeredPane>
+</jdddPanel>

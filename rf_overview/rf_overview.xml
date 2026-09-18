@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jdddPanel><DOOCSLayeredPane name="EditorPanel" bounds="0,0,1440,960"><author>shiftdocu</author><description>Shift documentation: RF summary (stations, energy, flattops, setpoint history)</description><fillColor>210,210,210</fillColor><adr>FLASH.RF/LLRF.CONTROLLER//</adr>
+<DOOCSLabel name="title" bounds="20,0,120,42"><text>RF</text><textColor>0,0,0</textColor><textFont>Arial,1,26</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="sub" bounds="160,0,400,42"><text>Shift documentation - RF summary</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="rl" bounds="20,50,80,22"><text>Station</text><textColor>120,120,120</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="rsp_a" bounds="20,80,80,22"><text>SP A</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="rsp_p" bounds="20,107,80,22"><text>SP phi</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="rrbv_a" bounds="20,134,80,22"><text>RBV A</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="rrbv_p" bounds="20,161,80,22"><text>RBV phi</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="rda" bounds="20,188,80,22"><text>dA/A</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="rdp" bounds="20,215,80,22"><text>dphi</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="rft" bounds="20,242,80,22"><text>Flattop</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="reg" bounds="20,269,80,22"><text>E-gain</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="rsu" bounds="20,296,80,22"><text>Sum U</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLine name="lh" bounds="20,76,1400,1"><points>0,0,1400,0</points><lineColor>140,140,140</lineColor></DOOCSLine>
+<DOOCSLine name="lsep" bounds="20,326,1400,1"><points>0,0,1400,0</points><lineColor>140,140,140</lineColor></DOOCSLine>
+<DOOCSIncludeComponent name="st_GUN" bounds="100,50,160,862"><adr>//GUN/</adr><xmlFile>ic_rf_station.xml</xmlFile></DOOCSIncludeComponent>
+<DOOCSIncludeComponent name="st_ACC1" bounds="268,50,160,862"><adr>//ACC1/</adr><xmlFile>ic_rf_station.xml</xmlFile></DOOCSIncludeComponent>
+<DOOCSIncludeComponent name="st_ACC39" bounds="436,50,160,862"><adr>//ACC39/</adr><xmlFile>ic_rf_station.xml</xmlFile></DOOCSIncludeComponent>
+<DOOCSIncludeComponent name="st_ACC23" bounds="604,50,160,862"><adr>//ACC23/</adr><xmlFile>ic_rf_station.xml</xmlFile></DOOCSIncludeComponent>
+<DOOCSIncludeComponent name="st_ACC45" bounds="772,50,160,862"><adr>//ACC45/</adr><xmlFile>ic_rf_station.xml</xmlFile></DOOCSIncludeComponent>
+<DOOCSIncludeComponent name="st_ACC67" bounds="940,50,160,862"><adr>//ACC67/</adr><xmlFile>ic_rf_station.xml</xmlFile></DOOCSIncludeComponent>
+<DOOCSIncludeComponent name="tds_LOLA" bounds="1108,50,160,246"><adr>//LOLA/</adr><xmlFile>ic_rf_tds.xml</xmlFile></DOOCSIncludeComponent>
+<DOOCSIncludeComponent name="tds_POLARIX" bounds="1276,50,160,246"><adr>//POLARIX/</adr><xmlFile>ic_rf_tds.xml</xmlFile></DOOCSIncludeComponent>
+<DOOCSIncludeComponent name="energy" bounds="1108,336,320,265"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML//</adr><xmlFile>ic_rf_energy.xml</xmlFile></DOOCSIncludeComponent>
+<DOOCSLabel name="svn_ACC139" bounds="268,296,48,22"><text>ACC139</text><textColor>120,120,120</textColor><textFont>Arial,0,13</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSValue name="sv1_ACC139" bounds="316,296,140,22"><adr>FLASH.RF/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.SUMVOLTAGE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="sv2_ACC139" bounds="456,296,140,22"><adr>FLASH.RF/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.SUMVOLTAGE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="svn_ACC23" bounds="604,296,48,22"><text>ACC23</text><textColor>120,120,120</textColor><textFont>Arial,0,13</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSValue name="sv1_ACC23" bounds="652,296,56,22"><adr>FLASH.RF/LLRF.SUMVOLTAGE_CTRL/ACC23/BR1.SP.SUMVOLTAGE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="sv2_ACC23" bounds="708,296,56,22"><adr>FLASH.RF/LLRF.SUMVOLTAGE_CTRL/ACC23/BR2.SP.SUMVOLTAGE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="svn_ACC45" bounds="772,296,48,22"><text>ACC45</text><textColor>120,120,120</textColor><textFont>Arial,0,13</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSValue name="sv1_ACC45" bounds="820,296,56,22"><adr>FLASH.RF/LLRF.SUMVOLTAGE_CTRL/ACC45/BR1.SP.SUMVOLTAGE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="sv2_ACC45" bounds="876,296,56,22"><adr>FLASH.RF/LLRF.SUMVOLTAGE_CTRL/ACC45/BR2.SP.SUMVOLTAGE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="svn_ACC67" bounds="940,296,48,22"><text>ACC67</text><textColor>120,120,120</textColor><textFont>Arial,0,13</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSValue name="sv1_ACC67" bounds="988,296,56,22"><adr>FLASH.RF/LLRF.SUMVOLTAGE_CTRL/ACC67/BR1.SP.SUMVOLTAGE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="sv2_ACC67" bounds="1044,296,56,22"><adr>FLASH.RF/LLRF.SUMVOLTAGE_CTRL/ACC67/BR2.SP.SUMVOLTAGE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="p0" bounds="20,336,78,132"><text>Flattop A</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="p1" bounds="20,480,78,132"><text>Flattop phi</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="p2" bounds="20,624,78,132"><text>Hist A 8 h</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+<DOOCSLabel name="p3" bounds="20,768,78,132"><text>Hist phi 8 h</text><textColor>60,60,60</textColor><textFont>Arial,0,16</textFont><alignX>LEFT</alignX><alignY>CENTER</alignY></DOOCSLabel>
+</DOOCSLayeredPane>
+</jdddPanel>
