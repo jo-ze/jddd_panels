@@ -6,9 +6,15 @@
 <DOOCSLabel name="lb_gold" bounds="1450,10,120,20"><text>Golden orbit:</text><textColor>0,0,0</textColor><textFont>Arial,0,12</textFont><alignX>RIGHT</alignX></DOOCSLabel>
 <DOOCSValue name="v_gold" bounds="1575,10,600,20"><adr>${orbit}/FLASH/ORBIT.GOLD.${line}.DESC</adr><maxLength>256</maxLength><textFont>Arial,0,12</textFont><textColor>0,0,153</textColor><enableValueDialog>false</enableValueDialog></DOOCSValue>
 
-<DOOCSDynamicList name="dl_blm" bounds="0,40,2880,30"><adr>${blm}/*/</adr><regexFilter>.*(GUN|FL0|${sec}).*</regexFilter><bgColor>210,210,210</bgColor><fillHorizontal>true</fillHorizontal><grid>5,5</grid>
-<DOOCSIncludeComponent name="tile" bounds="0,0,15,30"><xmlFile>includes/ic_blm_tile.xml</xmlFile><transparent>true</transparent></DOOCSIncludeComponent>
-</DOOCSDynamicList>
+<DOOCSPlotLocation name="alarm" bounds="0,40,2880,30">
+<updateTime>1.0</updateTime><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
+<adr0>${blm}/*GUN*/ALARM</adr0><lineColor0>220,50,50</lineColor0><lineStyle0>Bar</lineStyle0><lineWidth0>9</lineWidth0>
+<adr1>${blm}/*ACC*/ALARM</adr1><lineColor1>220,50,50</lineColor1><lineStyle1>Bar</lineStyle1><lineWidth1>9</lineWidth1>
+<adr2>${blm}/*FL0*/ALARM</adr2><lineColor2>220,50,50</lineColor2><lineStyle2>Bar</lineStyle2><lineWidth2>9</lineWidth2>
+<adr3>${blm}/*${sec}*/ALARM</adr3><lineColor3>220,50,50</lineColor3><lineStyle3>Bar</lineStyle3><lineWidth3>9</lineWidth3>
+<xMin>0.0</xMin><xMax>320.0</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>0.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
+<DOOCSButton name="btn_fl1" bounds="2700,8,80,24"><function>Open Panel</function><text>FL1</text><textColor>0,0,0</textColor><buttonColor>238,238,238</buttonColor><xmlFile>beam_overview.xml</xmlFile><localParameters>line|FLASH1;sec|FL1</localParameters></DOOCSButton>
+<DOOCSButton name="btn_fl2" bounds="2790,8,80,24"><function>Open Panel</function><text>FL2</text><textColor>0,0,0</textColor><buttonColor>238,238,238</buttonColor><xmlFile>beam_overview.xml</xmlFile><localParameters>line|FLASH2;sec|FL2</localParameters></DOOCSButton>
 <DOOCSCheckBox name="cb_bpm" bounds="2750,70,120,20"><function>Toggle Property</function><component>transmission</component><property>visible4</property><text>BPM charge</text><textFont>Arial,0,12</textFont><horizontalTextPosition>Left</horizontalTextPosition></DOOCSCheckBox>
 <DOOCSCheckBox name="cb_pers_t" bounds="2620,70,120,20"><function>Toggle Property</function><component>transmission</component><property>persistenceMode</property><text>Persistence</text><textFont>Arial,0,12</textFont><horizontalTextPosition>Left</horizontalTextPosition></DOOCSCheckBox>
 <DOOCSPlotLocation name="transmission" bounds="0,70,2880,130">
