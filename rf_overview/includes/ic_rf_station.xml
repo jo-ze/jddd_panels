@@ -86,90 +86,6 @@
 </DOOCSSwitch>
 </DOOCSSwitchCase><DOOCSSwitchCase name="X = 1" bounds="0,0,200,95"><highCase>1</highCase><DOOCSSwitch name="Switch1" bounds="0,0,200,95"><adr>/LLRF.CONTROLLER/MAIN.$l/NAME</adr>
 <DOOCSSwitchCase name="X matches MAIN.ACC1" bounds="0,0,200,95"><highCase>MAIN.ACC1</highCase><highComparator>matches</highComparator>
-<DOOCSValue name="Value4" bounds="105,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value3" bounds="105,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSIf name="If1" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
-<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
-<DOOCSValue name="Value4" bounds="0,75,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value3" bounds="0,50,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-</DOOCSIfCase>
-<DOOCSIfCase name="else" bounds="0,0,95,95">
-</DOOCSIfCase>
-</DOOCSIf>
-<DOOCSValue name="Value2" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value1" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSIf name="If2" bounds="105,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.CURVATURE</adr><ignoreError>false</ignoreError>
-<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
-<DOOCSValue name="Value4" bounds="0,75,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value3" bounds="0,50,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-</DOOCSIfCase>
-<DOOCSIfCase name="else" bounds="0,0,95,95">
-</DOOCSIfCase>
-</DOOCSIf>
-</DOOCSSwitchCase>
-<DOOCSSwitchCase name="X matches MAIN.ACC23" bounds="0,0,200,95"><highCase>MAIN.ACC23</highCase><highComparator>matches</highComparator>
-<DOOCSValue name="Value4" bounds="105,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value3" bounds="105,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSIf name="If1" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
-<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
-<DOOCSValue name="Value4" bounds="0,75,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value3" bounds="0,50,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-</DOOCSIfCase>
-<DOOCSIfCase name="else" bounds="0,0,95,95">
-</DOOCSIfCase>
-</DOOCSIf>
-<DOOCSValue name="Value2" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value1" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-</DOOCSSwitchCase>
-<DOOCSSwitchCase name="X matches MAIN.ACC45" bounds="0,0,200,95"><highCase>MAIN.ACC45</highCase><highComparator>matches</highComparator>
-<DOOCSValue name="Value4" bounds="105,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value3" bounds="105,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSIf name="If1" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
-<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
-<DOOCSValue name="Value4" bounds="0,75,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value3" bounds="0,50,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-</DOOCSIfCase>
-<DOOCSIfCase name="else" bounds="0,0,95,95">
-</DOOCSIfCase>
-</DOOCSIf>
-<DOOCSValue name="Value2" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value1" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-</DOOCSSwitchCase>
-<DOOCSSwitchCase name="X matches MAIN.ACC67" bounds="0,0,200,95"><highCase>MAIN.ACC67</highCase><highComparator>matches</highComparator>
-<DOOCSValue name="Value4" bounds="105,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value3" bounds="105,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSIf name="If1" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
-<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
-<DOOCSValue name="Value4" bounds="0,75,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value3" bounds="0,50,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-</DOOCSIfCase>
-<DOOCSIfCase name="else" bounds="0,0,95,95">
-</DOOCSIfCase>
-</DOOCSIf>
-<DOOCSValue name="Value2" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value1" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-</DOOCSSwitchCase>
-<DOOCSSwitchCase name="otherwise" bounds="0,0,200,95">
-<DOOCSIf name="If2" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.AMPL</adr><ignoreError>false</ignoreError>
-<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
-<DOOCSValue name="Value2" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.PHASE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value1" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.AMPL</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-</DOOCSIfCase>
-<DOOCSIfCase name="else" bounds="0,0,95,95">
-</DOOCSIfCase>
-</DOOCSIf>
-<DOOCSIf name="If1" bounds="105,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.AMPL</adr><ignoreError>false</ignoreError>
-<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
-<DOOCSValue name="Value3" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.AMPL</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="Value4" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.PHASE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
-</DOOCSIfCase>
-<DOOCSIfCase name="else" bounds="0,0,95,95">
-</DOOCSIfCase>
-</DOOCSIf>
-</DOOCSSwitchCase>
-</DOOCSSwitch>
-</DOOCSSwitchCase><DOOCSSwitchCase name="otherwise" bounds="0,0,200,95"><DOOCSSwitch name="Switch1" bounds="0,0,200,95"><adr>/LLRF.CONTROLLER/MAIN.$l/NAME</adr>
-<DOOCSSwitchCase name="X matches MAIN.ACC1" bounds="0,0,200,95"><highCase>MAIN.ACC1</highCase><highComparator>matches</highComparator>
 <DOOCSValue name="Value4" bounds="105,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.CHIRP</adr><representation>Float</representation><textColor>160,160,160</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
 <DOOCSValue name="Value3" bounds="105,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>160,160,160</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
 <DOOCSIf name="If1" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
@@ -252,6 +168,90 @@
 </DOOCSIf>
 </DOOCSSwitchCase>
 </DOOCSSwitch>
+</DOOCSSwitchCase><DOOCSSwitchCase name="otherwise" bounds="0,0,200,95"><DOOCSSwitch name="Switch1" bounds="0,0,200,95"><adr>/LLRF.CONTROLLER/MAIN.$l/NAME</adr>
+<DOOCSSwitchCase name="X matches MAIN.ACC1" bounds="0,0,200,95"><highCase>MAIN.ACC1</highCase><highComparator>matches</highComparator>
+<DOOCSValue name="Value4" bounds="105,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value3" bounds="105,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSIf name="If1" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
+<DOOCSValue name="Value4" bounds="0,75,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value3" bounds="0,50,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,95,95">
+</DOOCSIfCase>
+</DOOCSIf>
+<DOOCSValue name="Value2" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value1" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSIf name="If2" bounds="105,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.CURVATURE</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
+<DOOCSValue name="Value4" bounds="0,75,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value3" bounds="0,50,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL/ACC139/BR2.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,95,95">
+</DOOCSIfCase>
+</DOOCSIf>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="X matches MAIN.ACC23" bounds="0,0,200,95"><highCase>MAIN.ACC23</highCase><highComparator>matches</highComparator>
+<DOOCSValue name="Value4" bounds="105,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value3" bounds="105,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSIf name="If1" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
+<DOOCSValue name="Value4" bounds="0,75,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value3" bounds="0,50,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,95,95">
+</DOOCSIfCase>
+</DOOCSIf>
+<DOOCSValue name="Value2" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value1" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="X matches MAIN.ACC45" bounds="0,0,200,95"><highCase>MAIN.ACC45</highCase><highComparator>matches</highComparator>
+<DOOCSValue name="Value4" bounds="105,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value3" bounds="105,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSIf name="If1" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
+<DOOCSValue name="Value4" bounds="0,75,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value3" bounds="0,50,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,95,95">
+</DOOCSIfCase>
+</DOOCSIf>
+<DOOCSValue name="Value2" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value1" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="X matches MAIN.ACC67" bounds="0,0,200,95"><highCase>MAIN.ACC67</highCase><highComparator>matches</highComparator>
+<DOOCSValue name="Value4" bounds="105,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value3" bounds="105,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSIf name="If1" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
+<DOOCSValue name="Value4" bounds="0,75,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.THIRDDERIVATIVE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value3" bounds="0,50,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CURVATURE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,95,95">
+</DOOCSIfCase>
+</DOOCSIf>
+<DOOCSValue name="Value2" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.CHIRP</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value1" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.SUMVOLTAGE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,200,95">
+<DOOCSIf name="If2" bounds="0,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.AMPL</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
+<DOOCSValue name="Value2" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.PHASE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value1" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR1.SP.AMPL</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,95,95">
+</DOOCSIfCase>
+</DOOCSIf>
+<DOOCSIf name="If1" bounds="105,0,95,95"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.AMPL</adr><ignoreError>false</ignoreError>
+<DOOCSIfCase name="available" bounds="0,0,95,95"><comparator>available</comparator>
+<DOOCSValue name="Value3" bounds="0,0,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.AMPL</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="Value4" bounds="0,25,95,22"><adr>/LLRF.SUMVOLTAGE_CTRL//BR2.SP.PHASE</adr><representation>Float</representation><textColor>51,51,51</textColor><alignX>RIGHT</alignX><readEGU>true</readEGU></DOOCSValue>
+</DOOCSIfCase>
+<DOOCSIfCase name="else" bounds="0,0,95,95">
+</DOOCSIfCase>
+</DOOCSIf>
+</DOOCSSwitchCase>
+</DOOCSSwitch>
 </DOOCSSwitchCase></DOOCSSwitch><DOOCSValue name="eg2" bounds="105,311,95,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/${$l.replace(ACC,M1.ACC)}/ENERGYGAIN.BR2</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
 <DOOCSValue name="eg1" bounds="0,311,95,22"><adr>FLASH.RF/LLRF.ENERGYGAIN.ML/${$l.replace(ACC,M1.ACC)}/ENERGYGAIN.BR1</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
 <DOOCSSwitch name="Switch4" bounds="0,226,200,30"><adr>/LLRF.CONTROLLER/MAIN.$l/NAME</adr>
@@ -281,10 +281,10 @@
 <DOOCSLabel name="hdr" bounds="0,0,200,22"><text>$l</text><textColor>0,0,0</textColor><textFont>Arial,1,16</textFont><alignX>CENTER</alignX><alignY>CENTER</alignY></DOOCSLabel>
 <DOOCSSwitch name="sp_mode" bounds="0,42,95,47"><adr>//CTRL.$l/SP.PERBUNCH.STATUS</adr><addErrorCase>true</addErrorCase><DOOCSSwitchCase name="error" bounds="0,0,95,47"><errorCase>true</errorCase><DOOCSValue name="sp_a" bounds="0,0,95,22"><adr>//CTRL.$l/SP.AMPL</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
 <DOOCSValue name="sp_p" bounds="0,25,95,22"><adr>//CTRL.$l/SP.PHASE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
-</DOOCSSwitchCase><DOOCSSwitchCase name="X = 1" bounds="0,0,95,47"><highCase>1</highCase><DOOCSValue name="sp_a" bounds="0,0,95,22"><adr>//CTRL.$l/SP.AMPL</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>160,160,160</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
-<DOOCSValue name="sp_p" bounds="0,25,95,22"><adr>//CTRL.$l/SP.PHASE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>160,160,160</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
-</DOOCSSwitchCase><DOOCSSwitchCase name="otherwise" bounds="0,0,95,47"><DOOCSValue name="sp_a" bounds="0,0,95,22"><adr>//CTRL.$l/SP.AMPL</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
+</DOOCSSwitchCase><DOOCSSwitchCase name="X = 1" bounds="0,0,95,47"><highCase>1</highCase><DOOCSValue name="sp_a" bounds="0,0,95,22"><adr>//CTRL.$l/SP.AMPL</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
 <DOOCSValue name="sp_p" bounds="0,25,95,22"><adr>//CTRL.$l/SP.PHASE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
+</DOOCSSwitchCase><DOOCSSwitchCase name="otherwise" bounds="0,0,95,47"><DOOCSValue name="sp_a" bounds="0,0,95,22"><adr>//CTRL.$l/SP.AMPL</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>160,160,160</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
+<DOOCSValue name="sp_p" bounds="0,25,95,22"><adr>//CTRL.$l/SP.PHASE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>160,160,160</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
 </DOOCSSwitchCase></DOOCSSwitch><DOOCSValue name="rbv_a" bounds="105,42,95,22"><adr>//VS.$l/AMPL.SAMPLE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
 <DOOCSValue name="rbv_p" bounds="105,67,95,22"><adr>//VS.$l/PHASE.SAMPLE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
 <DOOCSValue name="ft" bounds="0,258,200,22"><adr>//MAIN.$l/PULSE_FLATTOP</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU><alignX>RIGHT</alignX></DOOCSValue>
