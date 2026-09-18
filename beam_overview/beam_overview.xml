@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jdddPanel><DOOCSLayeredPane name="beam_overview" bounds="0,0,2880,960"><author>jzemella</author><description>Shift documentation: transmission, losses, orbit and corrector kicks along z</description><fillColor>210,210,210</fillColor><grid>5,5</grid><localParameters>beamline|FL1;tor|FLASH.DIAG/TOROID.ML;blm|FLASH.DIAG/BLM.HLC;single|LOSS.SINGLE.PERCENT;multi|LOSS.MULTI.PERCENT;integral|LOSS.INTEGRAL.PERCENT;orbit|FLASH.DIAG/ORBIT;mag|FLASH.MAGNETS/MAGNET.ML;zmin|0.0;zmax|320.0</localParameters>
+<jdddPanel><DOOCSLayeredPane name="beam_overview" bounds="0,0,2880,960"><author>jzemella</author><description>Shift documentation: transmission, losses, orbit and corrector kicks along z</description><fillColor>210,210,210</fillColor><grid>5,5</grid><localParameters>beamline|FL1;tor|FLASH.DIAG/TOROID.ML;blm|FLASH.DIAG/BLM;sig|FLASH1;orbit|FLASH.DIAG/ORBIT;mag|FLASH.MAGNETS/MAGNET.ML;zmin|0.0;zmax|320.0</localParameters>
 
 <DOOCSLabel name="lb_title" bounds="10,5,600,30"><text>Beam overview ${beamline}</text><textColor>0,0,0</textColor><textFont>Arial,1,20</textFont><alignY>CENTER</alignY></DOOCSLabel>
 <DOOCSLabel name="lb_ref" bounds="700,10,120,20"><text>Reference orbit:</text><textColor>0,0,0</textColor><textFont>Arial,0,12</textFont><alignX>RIGHT</alignX></DOOCSLabel>
@@ -12,12 +12,15 @@
 <adr0>${tor}/*/CHARGE.${beamline}</adr0><lineColor0>0,102,204</lineColor0><lineStyle0>Bar</lineStyle0><lineWidth0>5</lineWidth0>
 <xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>0.0</yMin><yAutoScale>true</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
 
-<DOOCSPlotLocation name="losses" bounds="0,170,2880,230">
-<updateTime>1.0</updateTime><titleText>BLM losses (% of threshold): integral / multi / single</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
-<adr0>${blm}/*/${integral}</adr0><lineColor0>200,200,255</lineColor0><lineStyle0>Bar</lineStyle0><lineWidth0>9</lineWidth0>
-<adr1>${blm}/*/${multi}</adr1><lineColor1>255,153,0</lineColor1><lineStyle1>Bar</lineStyle1><lineWidth1>6</lineWidth1>
-<adr2>${blm}/*/${single}</adr2><lineColor2>204,0,0</lineColor2><lineStyle2>Bar</lineStyle2><lineWidth2>3</lineWidth2>
-<xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>0.0</yMin><yMax>120.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
+<DOOCSPlotLocation name="losses" bounds="0,170,2880,150">
+<updateTime>1.0</updateTime><titleText>BLM signal ${sig} (1.0 = single alarm threshold)</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
+<adr0>${blm}/*/SIGNAL.${sig}</adr0><lineColor0>204,0,0</lineColor0><lineStyle0>Bar</lineStyle0><lineWidth0>5</lineWidth0>
+<xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>0.0</yMin><yMax>1.2</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
+
+<DOOCSPlotLocation name="integral" bounds="0,320,2880,80">
+<updateTime>1.0</updateTime><titleText>BLM integral</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
+<adr0>${blm}/*/INTEGRAL</adr0><lineColor0>255,153,0</lineColor0><lineStyle0>Bar</lineStyle0><lineWidth0>5</lineWidth0>
+<xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>0.0</yMin><yAutoScale>true</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
 
 <DOOCSPlotLocation name="orbitH" bounds="0,400,2880,170">
 <updateTime>1.0</updateTime><titleText>Orbit horizontal: absolute / difference to reference</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
