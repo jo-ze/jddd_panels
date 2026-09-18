@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jdddPanel><DOOCSLayeredPane name="ic_blm_tile" bounds="0,0,15,30"><fillColor>210,210,210</fillColor><transparent>true</transparent><grid>1,1</grid>
+<DOOCSSwitch name="sw_alarm" bounds="0,0,15,30"><adr>/ALARM</adr><updateTime>1.0</updateTime>
+<DOOCSSwitchCase name="ok" bounds="0,0,15,30"><highCase>0</highCase><highComparator>=</highComparator>
+<DOOCSRect name="r_ok" bounds="1,1,13,28"><lineColor>150,150,150</lineColor><fillColor>120,200,120</fillColor></DOOCSRect>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,15,30">
+<DOOCSRect name="r_alarm" bounds="1,1,13,28"><lineColor>150,150,150</lineColor><fillColor>220,50,50</fillColor></DOOCSRect>
+</DOOCSSwitchCase>
+</DOOCSSwitch>
+</DOOCSLayeredPane>
+</jdddPanel>

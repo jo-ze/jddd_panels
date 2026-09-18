@@ -1,47 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jdddPanel><DOOCSLayeredPane name="beam_overview" bounds="0,0,2880,960"><author>jzemella</author><description>Shift documentation: transmission, losses, orbit and corrector kicks along z</description><fillColor>210,210,210</fillColor><grid>5,5</grid><localParameters>tor|FLASH.DIAG/TOROID.ML;blm|FLASH.DIAG/BLM;line|FLASH1;orbit|FLASH.DIAG/ORBIT;mag|FLASH.MAGNETS/MAGNET.ML;zmin|0.0;zmax|320.0</localParameters>
-
-<DOOCSLabel name="lb_title" bounds="10,5,600,30"><text>Beam overview ${line}</text><textColor>0,0,0</textColor><textFont>Arial,1,20</textFont><alignY>CENTER</alignY></DOOCSLabel>
+<jdddPanel><DOOCSLayeredPane name="beam_overview" bounds="0,0,2880,960"><author>jzemella</author><description>Shift documentation: transmission, losses, orbit and corrector kicks along z</description><fillColor>210,210,210</fillColor><grid>5,5</grid><localParameters>line|FLASH1;sec|FL1;tor|FLASH.DIAG/TOROID.ML;blm|FLASH.DIAG/BLM;orbit|FLASH.DIAG/ORBIT;mag|FLASH.MAGNETS/MAGNET.ML</localParameters>
+<DOOCSLabel name="lb_title" bounds="10,5,600,30"><text>Beam overview ${line} (${sec})</text><textColor>0,0,0</textColor><textFont>Arial,1,20</textFont><alignY>CENTER</alignY></DOOCSLabel>
 <DOOCSLabel name="lb_ref" bounds="700,10,120,20"><text>Reference orbit:</text><textColor>0,0,0</textColor><textFont>Arial,0,12</textFont><alignX>RIGHT</alignX></DOOCSLabel>
 <DOOCSValue name="v_ref" bounds="825,10,600,20"><adr>${orbit}/FLASH/ORBIT.REF.${line}.DESC</adr><maxLength>256</maxLength><textFont>Arial,0,12</textFont><textColor>0,0,153</textColor><enableValueDialog>false</enableValueDialog></DOOCSValue>
 <DOOCSLabel name="lb_gold" bounds="1450,10,120,20"><text>Golden orbit:</text><textColor>0,0,0</textColor><textFont>Arial,0,12</textFont><alignX>RIGHT</alignX></DOOCSLabel>
 <DOOCSValue name="v_gold" bounds="1575,10,600,20"><adr>${orbit}/FLASH/ORBIT.GOLD.${line}.DESC</adr><maxLength>256</maxLength><textFont>Arial,0,12</textFont><textColor>0,0,153</textColor><enableValueDialog>false</enableValueDialog></DOOCSValue>
 
-<DOOCSPlotLocation name="transmission" bounds="0,40,2880,130">
-<updateTime>1.0</updateTime><titleText>Transmission (charge)</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
-<adr0>${tor}/*/CHARGE.${line}</adr0><lineColor0>0,102,204</lineColor0><lineStyle0>Bar</lineStyle0><lineWidth0>5</lineWidth0>
-<xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>0.0</yMin><yAutoScale>true</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
-
-<DOOCSPlotLocation name="losses" bounds="0,170,2880,150">
-<updateTime>1.0</updateTime><titleText>BLM signal ${line} (1.0 = single alarm threshold)</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
-<adr0>${blm}/*/SIGNAL.${line}</adr0><lineColor0>204,0,0</lineColor0><lineStyle0>Bar</lineStyle0><lineWidth0>5</lineWidth0>
-<xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>0.0</yMin><yMax>1.2</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
-
-<DOOCSPlotLocation name="integral" bounds="0,320,2880,80">
-<updateTime>1.0</updateTime><titleText>BLM integral</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
-<adr0>${blm}/*/INTEGRAL</adr0><lineColor0>255,153,0</lineColor0><lineStyle0>Bar</lineStyle0><lineWidth0>5</lineWidth0>
-<xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>0.0</yMin><yAutoScale>true</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
-
-<DOOCSPlotLocation name="orbitH" bounds="0,400,2880,170">
-<updateTime>1.0</updateTime><titleText>Orbit horizontal: absolute / difference to reference</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
-<adr0>${orbit}/*/POS.${line}</adr0><lineColor0>140,170,215</lineColor0><lineStyle0>Bar</lineStyle0><lineMark0>Circle</lineMark0><interpretation0>I</interpretation0>
-<adr1>${orbit}/*/POS.${line}.DIFF</adr1><lineColor1>204,0,0</lineColor1><lineStyle1>VarBar</lineStyle1><interpretation1>I</interpretation1>
-<xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
-
-<DOOCSPlotLocation name="orbitV" bounds="0,680,2880,170">
-<updateTime>1.0</updateTime><titleText>Orbit vertical: absolute / difference to reference</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
-<adr0>${orbit}/*/POS.${line}</adr0><lineColor0>140,170,215</lineColor0><lineStyle0>Bar</lineStyle0><lineMark0>Circle</lineMark0><interpretation0>Q</interpretation0>
-<adr1>${orbit}/*/POS.${line}.DIFF</adr1><lineColor1>204,0,0</lineColor1><lineStyle1>VarBar</lineStyle1><interpretation1>Q</interpretation1>
-<xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
-
-<DOOCSPlotLocation name="kickH" bounds="0,570,2880,110">
-<updateTime>1.0</updateTime><titleText>Corrector SP horizontal</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
-<adr0>${mag}/H*/KICK_MRAD.SP</adr0><lineColor0>0,153,255</lineColor0><lineStyle0>Bar</lineStyle0>
-<xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
-
-<DOOCSPlotLocation name="kickV" bounds="0,850,2880,110">
-<updateTime>1.0</updateTime><titleText>Corrector SP vertical</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
-<adr0>${mag}/V*/KICK_MRAD.SP</adr0><lineColor0>0,153,255</lineColor0><lineStyle0>Bar</lineStyle0>
-<xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
+<DOOCSDynamicList name="dl_blm" bounds="0,40,2880,30"><adr>${blm}/*/</adr><regexFilter>.*(GUN|FL0|${sec}).*</regexFilter><bgColor>210,210,210</bgColor><fillHorizontal>true</fillHorizontal><grid>5,5</grid>
+<DOOCSIncludeComponent name="tile" bounds="0,0,15,30"><xmlFile>includes/ic_blm_tile.xml</xmlFile><transparent>true</transparent></DOOCSIncludeComponent>
+</DOOCSDynamicList>
+<DOOCSCheckBox name="cb_bpm" bounds="2750,70,120,20"><function>Toggle Property</function><component>transmission</component><property>visible4</property><text>BPM charge</text><textFont>Arial,0,12</textFont><horizontalTextPosition>Left</horizontalTextPosition></DOOCSCheckBox>
+<DOOCSCheckBox name="cb_pers_t" bounds="2620,70,120,20"><function>Toggle Property</function><component>transmission</component><property>persistenceMode</property><text>Persistence</text><textFont>Arial,0,12</textFont><horizontalTextPosition>Left</horizontalTextPosition></DOOCSCheckBox>
+<DOOCSPlotLocation name="transmission" bounds="0,70,2880,130">
+<updateTime>1.0</updateTime><titleText>Transmission (charge)</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><persistenceMode>false</persistenceMode><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
+<adr0>${tor}/*GUN*/CHARGE.${line}</adr0><lineColor0>0,102,204</lineColor0><lineStyle0>Bar</lineStyle0><lineWidth0>6</lineWidth0>
+<adr1>${tor}/*ACC*/CHARGE.${line}</adr1><lineColor1>0,102,204</lineColor1><lineStyle1>Bar</lineStyle1><lineWidth1>6</lineWidth1>
+<adr2>${tor}/*FL0*/CHARGE.${line}</adr2><lineColor2>0,102,204</lineColor2><lineStyle2>Bar</lineStyle2><lineWidth2>6</lineWidth2>
+<adr3>${tor}/*${sec}*/CHARGE.${line}</adr3><lineColor3>0,102,204</lineColor3><lineStyle3>Bar</lineStyle3><lineWidth3>6</lineWidth3>
+<adr4>${orbit}/*GUN*/CHARGE.${line}</adr4><lineColor4>0,180,255</lineColor4><lineStyle4>Bar</lineStyle4><lineWidth4>2</lineWidth4><visible4>false</visible4>
+<adr5>${orbit}/*ACC*/CHARGE.${line}</adr5><lineColor5>0,180,255</lineColor5><lineStyle5>Bar</lineStyle5><lineWidth5>2</lineWidth5><visible5>false</visible5>
+<adr6>${orbit}/*FL0*/CHARGE.${line}</adr6><lineColor6>0,180,255</lineColor6><lineStyle6>Bar</lineStyle6><lineWidth6>2</lineWidth6><visible6>false</visible6>
+<adr7>${orbit}/*${sec}*/CHARGE.${line}</adr7><lineColor7>0,180,255</lineColor7><lineStyle7>Bar</lineStyle7><lineWidth7>2</lineWidth7><visible7>false</visible7>
+<xMin>0.0</xMin><xMax>320.0</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>0.0</yMin><yAutoScale>true</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
+<DOOCSRect name="sep200" bounds="0,200,2880,3"><lineTransparent>true</lineTransparent><fillColor>120,120,120</fillColor></DOOCSRect>
+<DOOCSPlotLocation name="losses" bounds="0,203,2880,157">
+<updateTime>1.0</updateTime><titleText>BLM: integral (wide) / signal ${line} (narrow, 1.0 = single alarm threshold)</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><persistenceMode>false</persistenceMode><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
+<adr0>${blm}/*GUN*/INTEGRAL</adr0><lineColor0>200,200,255</lineColor0><lineStyle0>Bar</lineStyle0><lineWidth0>9</lineWidth0>
+<adr1>${blm}/*ACC*/INTEGRAL</adr1><lineColor1>200,200,255</lineColor1><lineStyle1>Bar</lineStyle1><lineWidth1>9</lineWidth1>
+<adr2>${blm}/*FL0*/INTEGRAL</adr2><lineColor2>200,200,255</lineColor2><lineStyle2>Bar</lineStyle2><lineWidth2>9</lineWidth2>
+<adr3>${blm}/*${sec}*/INTEGRAL</adr3><lineColor3>200,200,255</lineColor3><lineStyle3>Bar</lineStyle3><lineWidth3>9</lineWidth3>
+<adr4>${blm}/*GUN*/SIGNAL.${line}</adr4><lineColor4>204,0,0</lineColor4><lineStyle4>Bar</lineStyle4><lineWidth4>3</lineWidth4>
+<adr5>${blm}/*ACC*/SIGNAL.${line}</adr5><lineColor5>204,0,0</lineColor5><lineStyle5>Bar</lineStyle5><lineWidth5>3</lineWidth5>
+<adr6>${blm}/*FL0*/SIGNAL.${line}</adr6><lineColor6>204,0,0</lineColor6><lineStyle6>Bar</lineStyle6><lineWidth6>3</lineWidth6>
+<adr7>${blm}/*${sec}*/SIGNAL.${line}</adr7><lineColor7>204,0,0</lineColor7><lineStyle7>Bar</lineStyle7><lineWidth7>3</lineWidth7>
+<xMin>0.0</xMin><xMax>320.0</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>0.0</yMin><yAutoScale>true</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
+<DOOCSRect name="sep360" bounds="0,360,2880,3"><lineTransparent>true</lineTransparent><fillColor>120,120,120</fillColor></DOOCSRect>
+<DOOCSCheckBox name="cb_pers_H" bounds="2750,363,120,20"><function>Toggle Property</function><component>orbitH</component><property>persistenceMode</property><text>Persistence</text><textFont>Arial,0,12</textFont><horizontalTextPosition>Left</horizontalTextPosition></DOOCSCheckBox>
+<DOOCSPlotLocation name="orbitH" bounds="0,363,2880,177">
+<updateTime>1.0</updateTime><titleText>Orbit H: absolute / difference to reference</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><persistenceMode>false</persistenceMode><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
+<adr0>${orbit}/*GUN*/POS.${line}</adr0><lineColor0>140,170,215</lineColor0><lineStyle0>Bar</lineStyle0><interpretation0>I</interpretation0>
+<adr1>${orbit}/*ACC*/POS.${line}</adr1><lineColor1>140,170,215</lineColor1><lineStyle1>Bar</lineStyle1><interpretation1>I</interpretation1>
+<adr2>${orbit}/*FL0*/POS.${line}</adr2><lineColor2>140,170,215</lineColor2><lineStyle2>Bar</lineStyle2><interpretation2>I</interpretation2>
+<adr3>${orbit}/*${sec}*/POS.${line}</adr3><lineColor3>140,170,215</lineColor3><lineStyle3>Bar</lineStyle3><interpretation3>I</interpretation3>
+<adr4>${orbit}/*GUN*/POS.${line}.DIFF</adr4><lineColor4>204,0,0</lineColor4><lineStyle4>VarBar</lineStyle4><interpretation4>I</interpretation4>
+<adr5>${orbit}/*ACC*/POS.${line}.DIFF</adr5><lineColor5>204,0,0</lineColor5><lineStyle5>VarBar</lineStyle5><interpretation5>I</interpretation5>
+<adr6>${orbit}/*FL0*/POS.${line}.DIFF</adr6><lineColor6>204,0,0</lineColor6><lineStyle6>VarBar</lineStyle6><interpretation6>I</interpretation6>
+<adr7>${orbit}/*${sec}*/POS.${line}.DIFF</adr7><lineColor7>204,0,0</lineColor7><lineStyle7>VarBar</lineStyle7><interpretation7>I</interpretation7>
+<xMin>0.0</xMin><xMax>320.0</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
+<DOOCSPlotLocation name="kickH" bounds="0,540,2880,110">
+<updateTime>1.0</updateTime><titleText>Corrector SP H (mrad)</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><persistenceMode>false</persistenceMode><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
+<adr0>${mag}/H*GUN*/KICK_MRAD.SP</adr0><lineColor0>0,153,255</lineColor0><lineStyle0>Bar</lineStyle0>
+<adr1>${mag}/H*ACC*/KICK_MRAD.SP</adr1><lineColor1>0,153,255</lineColor1><lineStyle1>Bar</lineStyle1>
+<adr2>${mag}/H*FL0*/KICK_MRAD.SP</adr2><lineColor2>0,153,255</lineColor2><lineStyle2>Bar</lineStyle2>
+<adr3>${mag}/H*${sec}*/KICK_MRAD.SP</adr3><lineColor3>0,153,255</lineColor3><lineStyle3>Bar</lineStyle3>
+<xMin>0.0</xMin><xMax>320.0</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
+<DOOCSRect name="sep650" bounds="0,650,2880,3"><lineTransparent>true</lineTransparent><fillColor>120,120,120</fillColor></DOOCSRect>
+<DOOCSCheckBox name="cb_pers_V" bounds="2750,653,120,20"><function>Toggle Property</function><component>orbitV</component><property>persistenceMode</property><text>Persistence</text><textFont>Arial,0,12</textFont><horizontalTextPosition>Left</horizontalTextPosition></DOOCSCheckBox>
+<DOOCSPlotLocation name="orbitV" bounds="0,653,2880,177">
+<updateTime>1.0</updateTime><titleText>Orbit V: absolute / difference to reference</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><persistenceMode>false</persistenceMode><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
+<adr0>${orbit}/*GUN*/POS.${line}</adr0><lineColor0>140,170,215</lineColor0><lineStyle0>Bar</lineStyle0><interpretation0>Q</interpretation0>
+<adr1>${orbit}/*ACC*/POS.${line}</adr1><lineColor1>140,170,215</lineColor1><lineStyle1>Bar</lineStyle1><interpretation1>Q</interpretation1>
+<adr2>${orbit}/*FL0*/POS.${line}</adr2><lineColor2>140,170,215</lineColor2><lineStyle2>Bar</lineStyle2><interpretation2>Q</interpretation2>
+<adr3>${orbit}/*${sec}*/POS.${line}</adr3><lineColor3>140,170,215</lineColor3><lineStyle3>Bar</lineStyle3><interpretation3>Q</interpretation3>
+<adr4>${orbit}/*GUN*/POS.${line}.DIFF</adr4><lineColor4>204,0,0</lineColor4><lineStyle4>VarBar</lineStyle4><interpretation4>Q</interpretation4>
+<adr5>${orbit}/*ACC*/POS.${line}.DIFF</adr5><lineColor5>204,0,0</lineColor5><lineStyle5>VarBar</lineStyle5><interpretation5>Q</interpretation5>
+<adr6>${orbit}/*FL0*/POS.${line}.DIFF</adr6><lineColor6>204,0,0</lineColor6><lineStyle6>VarBar</lineStyle6><interpretation6>Q</interpretation6>
+<adr7>${orbit}/*${sec}*/POS.${line}.DIFF</adr7><lineColor7>204,0,0</lineColor7><lineStyle7>VarBar</lineStyle7><interpretation7>Q</interpretation7>
+<xMin>0.0</xMin><xMax>320.0</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
+<DOOCSPlotLocation name="kickV" bounds="0,830,2880,110">
+<updateTime>1.0</updateTime><titleText>Corrector SP V (mrad)</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><persistenceMode>false</persistenceMode><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
+<adr0>${mag}/V*GUN*/KICK_MRAD.SP</adr0><lineColor0>0,153,255</lineColor0><lineStyle0>Bar</lineStyle0>
+<adr1>${mag}/V*ACC*/KICK_MRAD.SP</adr1><lineColor1>0,153,255</lineColor1><lineStyle1>Bar</lineStyle1>
+<adr2>${mag}/V*FL0*/KICK_MRAD.SP</adr2><lineColor2>0,153,255</lineColor2><lineStyle2>Bar</lineStyle2>
+<adr3>${mag}/V*${sec}*/KICK_MRAD.SP</adr3><lineColor3>0,153,255</lineColor3><lineStyle3>Bar</lineStyle3>
+<xMin>0.0</xMin><xMax>320.0</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
 </DOOCSLayeredPane>
 </jdddPanel>
