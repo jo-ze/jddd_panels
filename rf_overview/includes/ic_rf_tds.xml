@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jdddPanel><DOOCSLayeredPane name="EditorPanel" bounds="0,0,160,246"><author>shiftdocu</author><description>Shift docu RF: TDS column (LOLA, POLARIX), same grid as ic_llrf_station; cells without a property stay empty</description><fillColor>210,210,210</fillColor><grid>5.0,5.0</grid>
+<?xml version='1.0' encoding='UTF-8'?>
+<jdddPanel><DOOCSLayeredPane name="EditorPanel" bounds="0,0,160,92"><author>shiftdocu</author><description>Shift docu RF: TDS column (LOLA, POLARIX), same grid as ic_llrf_station; cells without a property stay empty</description><fillColor>210,210,210</fillColor><grid>5.0,5.0</grid>
 <DOOCSLabel name="hdr" bounds="0,0,160,22"><text>$l</text><textColor>0,0,0</textColor><textFont>Arial,1,16</textFont><alignX>CENTER</alignX><alignY>CENTER</alignY></DOOCSLabel>
-<DOOCSValue name="sp_a" bounds="0,30,160,22"><adr>//CTRL.$l/SP.AMPL</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
-<DOOCSValue name="sp_p" bounds="0,57,160,22"><adr>//CTRL.$l/SP.PHASE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
-</DOOCSLayeredPane>
+<DOOCSValue name="sp_a" bounds="0,42,76,22"><adr>//CTRL.$l/SP.AMPL</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSValue name="sp_p" bounds="0,67,76,22"><adr>//CTRL.$l/SP.PHASE</adr><representation>Fixed</representation><maxLength>6</maxLength><textColor>51,51,51</textColor><bgColor>238,238,238</bgColor><alignY>CENTER</alignY><enableValueDialog>false</enableValueDialog><readEGU>true</readEGU></DOOCSValue>
+<DOOCSLabel name="l_sp" bounds="0,24,76,16"><text>SP</text><textColor>120,120,120</textColor><textFont>Arial,0,12</textFont><alignX>CENTER</alignX><alignY>CENTER</alignY></DOOCSLabel></DOOCSLayeredPane>
 </jdddPanel>
