@@ -28,13 +28,13 @@
 <adr1>${orbit}/*/POS.${line}.DIFF</adr1><lineColor1>204,0,0</lineColor1><lineStyle1>VarBar</lineStyle1><interpretation1>I</interpretation1>
 <xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
 
-<DOOCSPlotLocation name="orbitV" bounds="0,570,2880,170">
+<DOOCSPlotLocation name="orbitV" bounds="0,680,2880,170">
 <updateTime>1.0</updateTime><titleText>Orbit vertical: absolute / difference to reference</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
 <adr0>${orbit}/*/POS.${line}</adr0><lineColor0>140,170,215</lineColor0><lineStyle0>Bar</lineStyle0><lineMark0>Circle</lineMark0><interpretation0>Q</interpretation0>
 <adr1>${orbit}/*/POS.${line}.DIFF</adr1><lineColor1>204,0,0</lineColor1><lineStyle1>VarBar</lineStyle1><interpretation1>Q</interpretation1>
 <xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
 
-<DOOCSPlotLocation name="kickH" bounds="0,740,2880,110">
+<DOOCSPlotLocation name="kickH" bounds="0,570,2880,110">
 <updateTime>1.0</updateTime><titleText>Corrector SP horizontal</titleText><titleFont>Arial,0,14</titleFont><bgColor>210,210,210</bgColor><showLegend>false</showLegend><locationInM>true</locationInM><masterXScale>flashBeamOverview</masterXScale>
 <adr0>${mag}/H*/KICK_MRAD.SP</adr0><lineColor0>0,153,255</lineColor0><lineStyle0>Bar</lineStyle0>
 <xMin>${zmin}</xMin><xMax>${zmax}</xMax><xScaleFromServer>false</xScaleFromServer><xAutoScale>false</xAutoScale><xTextFont>Arial,0,12</xTextFont><yMin>-1.0</yMin><yMax>1.0</yMax><yAutoScale>false</yAutoScale><yTextFont>Arial,0,12</yTextFont></DOOCSPlotLocation>
