@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jdddPanel><DOOCSLayeredPane name="EditorPanel" bounds="0,0,215,35"><description>sketch RF station ~12 m</description><fillColor>210,210,210</fillColor>
+<DOOCSSwitch name="sw" bounds="0,0,215,35">
+<DOOCSSwitchCase name="adr matches .*MON.*" bounds="0,0,215,35"><highCase>.*MON.*</highCase><highComparator>adr matches</highComparator>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="adr matches .*GUN.*" bounds="0,0,215,35"><highCase>.*GUN.*</highCase><highComparator>adr matches</highComparator>
+<DOOCSRect name="t0" bounds="0,0,1,20"><lineTransparent>true</lineTransparent><fillColor>0,0,0</fillColor></DOOCSRect>
+<DOOCSRect name="r" bounds="80,4,35,29"><lineTransparent>true</lineTransparent><fillColor>139,69,19</fillColor></DOOCSRect>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="adr matches .*ACC39.*" bounds="0,0,215,35"><highCase>.*ACC39.*</highCase><highComparator>adr matches</highComparator>
+<DOOCSRect name="t0" bounds="0,0,1,20"><lineTransparent>true</lineTransparent><fillColor>0,0,0</fillColor></DOOCSRect>
+<DOOCSRect name="r" bounds="80,4,45,29"><lineTransparent>true</lineTransparent><fillColor>255,100,0</fillColor></DOOCSRect>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="adr matches .*ACC1.*" bounds="0,0,215,35"><highCase>.*ACC1.*</highCase><highComparator>adr matches</highComparator>
+<DOOCSRect name="Rect1" bounds="10,4,105,29"><lineTransparent>true</lineTransparent><fillColor>255,215,0</fillColor><arcWidth>10</arcWidth></DOOCSRect>
+<DOOCSRect name="t0" bounds="0,0,1,20"><lineTransparent>true</lineTransparent><fillColor>0,0,0</fillColor></DOOCSRect>
+</DOOCSSwitchCase>
+<DOOCSSwitchCase name="otherwise" bounds="0,0,215,35">
+<DOOCSRect name="Rect2" bounds="110,4,105,31"><lineTransparent>true</lineTransparent><fillColor>255,215,0</fillColor><arcWidth>10</arcWidth></DOOCSRect>
+<DOOCSRect name="t0" bounds="10,0,1,20"><lineTransparent>true</lineTransparent><fillColor>0,0,0</fillColor></DOOCSRect>
+<DOOCSRect name="r" bounds="0,3,105,29"><lineTransparent>true</lineTransparent><fillColor>255,215,0</fillColor><arcWidth>10</arcWidth></DOOCSRect>
+</DOOCSSwitchCase>
+</DOOCSSwitch>
+</DOOCSLayeredPane>
+<thumbnail>iVBORw0KGgoAAAANSUhEUgAAABYAAAAECAYAAACKqs+rAAAARUlEQVR4XmNgYGD4f+DAgf+46Jk2DP+fdfrCaXR5bDQDFPy/dOkSTvw/hQEFo8tjw2BTQbagS+AzuKGhAUMNOoa5mCYAALiFsQZn1N+4AAAAAElFTkSuQmCC</thumbnail>
+</jdddPanel>
