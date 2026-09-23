@@ -1,2 +1,7 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<jdddPanel><DOOCSLayeredPane name="EditorPanel" bounds="0,0,22,20"><description>sketch undulator 2.5 m</description><fillColor>210,210,210</fillColor><DOOCSRect name="t0" bounds="0,0,1,20"><lineTransparent>true</lineTransparent><fillColor>0,0,0</fillColor></DOOCSRect><DOOCSRect name="u" bounds="0,5,22,10"><lineTransparent>true</lineTransparent><fillColor>230,180,0</fillColor></DOOCSRect></DOOCSLayeredPane></jdddPanel>
+<?xml version="1.0" encoding="UTF-8"?>
+<jdddPanel><DOOCSLayeredPane name="EditorPanel" bounds="1582,5,50,20"><description>sketch undulator 2.5 m</description><fillColor>210,210,210</fillColor>
+<DOOCSRect name="t0" bounds="0,0,1,20"><lineTransparent>true</lineTransparent><fillColor>0,0,0</fillColor></DOOCSRect>
+<DOOCSRect name="u" bounds="0,5,50,10"><lineTransparent>true</lineTransparent><fillColor>230,180,0</fillColor></DOOCSRect>
+</DOOCSLayeredPane>
+<thumbnail>iVBORw0KGgoAAAANSUhEUgAAAAYAAAADCAYAAACwAX77AAAAI0lEQVR4XmO4vCvhPzK+uCvzPwMIHDhw4P+lS5dQMFgCFwAAT2Aftz6T6foAAAAASUVORK5CYII=</thumbnail>
+</jdddPanel>
